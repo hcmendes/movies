@@ -1,0 +1,16 @@
+$base-color: #76b6ff;
+$vermelho: #FF8AAE;
+$verde: #6BCB77;
+
+$primary: $base-color;
+$danger: $vermelho;
+$green: $verde;
+
+:root {
+  --base-color: #{$base-color};
+  --vermelho: #{$vermelho};
+  --verde: #{$verde};
+}
+
+// Import Bootstrap and its default variables
+@import '~bootstrap/scss/bootstrap.scss';

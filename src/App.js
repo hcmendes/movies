@@ -1,24 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import {
+  Navbar,
+  Container,
+  Row,
+  Col
+} from 'react-bootstrap';
+import './custom.scss';
+import Movies from './movies';
+import './css/sticky-footer.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar bg="light" expand="lg">
+        <Container>
+          <Navbar.Brand href="#">
+            <img
+              alt=""
+              src="/logo.svg"
+              width="30"
+              height="30"
+              className="d-inline-block align-top"
+          /> Movies
+          </Navbar.Brand>
+        </Container>
+      </Navbar>
+      <br />
+      <Container>
+        <Movies />
+      </Container>
+      <footer class="footer">
+        <Container className="text-center">
+          <span class="text-muted">
+            Thank you for visiting.
+            Made by <a href="https://github.com/hcmendes" target="_blank" rel="noreferrer">Hilton M. Cardoso</a>
+          </span>
+        </Container>
+      </footer>
+    </>
   );
 }
 
