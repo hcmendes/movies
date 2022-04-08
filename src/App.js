@@ -1,12 +1,11 @@
 import {
   Navbar,
   Container,
-  Row,
-  Col
 } from 'react-bootstrap';
 import './custom.scss';
 import Movies from './movies';
 import './css/sticky-footer.css';
+import logo from './logo.svg';
 
 function App() {
   return (
@@ -16,7 +15,7 @@ function App() {
           <Navbar.Brand href="#">
             <img
               alt=""
-              src="/logo.svg"
+              src={logo}
               width="30"
               height="30"
               className="d-inline-block align-top"
@@ -28,9 +27,9 @@ function App() {
       <Container>
         <Movies />
       </Container>
-      <footer class="footer">
+      <footer className="footer">
         <Container className="text-center">
-          <span class="text-muted">
+          <span className="text-muted">
             Thank you for visiting.
             Made by <a href="https://github.com/hcmendes" target="_blank" rel="noreferrer">Hilton M. Cardoso</a>
           </span>

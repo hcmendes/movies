@@ -55,7 +55,7 @@ export default function Movies() {
       // prevent doing the same request
       if (movie.fetched && value === lastValue) return;
 
-      const res = await axios.get(`http://www.omdbapi.com`, {
+      const res = await axios.get(`https://www.omdbapi.com`, {
         params: {
           apikey: process.env.REACT_APP_API_KEY,
           t: value
